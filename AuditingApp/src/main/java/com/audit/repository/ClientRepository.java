@@ -1,5 +1,9 @@
 package com.audit.repository;
 
-public class ClientRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.audit.domain.ClientDomain;
+
+public interface ClientRepository extends CrudRepository<ClientDomain, Integer> {
 
 }
